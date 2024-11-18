@@ -4,6 +4,7 @@ public class Main{
         AppointmentBook a = new AppointmentBook(schedule);
         System.out.println(a);
         for(int i = 10; i<15; i++) schedule[1][i] = true;
-        a.printPeriod(2);
+        a.findFreeBlock(2, 15);
+        
     }
 }
